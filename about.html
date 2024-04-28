@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Font Awesome -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+</head>
+
+<body >
+<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+     <a class="navbar-brand mr-4" href="/">Flask Blog</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> 
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="C:\Users\salok\PycharmProjects\New File\CSEDUBookClub-WEB\authentication\frontend\templates\home.html">Home</a>
+          <a class="nav-item nav-link" href="C:\Users\salok\PycharmProjects\New File\CSEDUBookClub-WEB\authentication\frontend\templates\about.html">About</a>
+          <a class="nav-item nav-link" href="C:\Users\salok\PycharmProjects\New File\Book Share\templates\Login_v4\index.html">Login</a>
+
+        </div>
+        <!-- Navbar Right Side -->
+        <div class="navbar-nav">
+            {% if auth.current_user %}
+            <a class="nav-item nav-link" href="{{url_for('logout')}}">LogOut</a>
+          {% else %}
+          <a class="nav-item nav-link" href="C:\Users\salok\PycharmProjects\New File\CSEDUBookClub-WEB\authentication\frontend\templates\login.html">Login</a>
+          <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="view" align="center" >
+    <h1 style="margin-top: 3%">Salokhiddin Mukhiddinov Project</h1>
+    <h3 >Book Share Website</h3>
+    <div>
+
+        <!-- Card Narrower -->
+        <div class="card testimonial-card" style="width: 30%;display: inline-block;margin-bottom: 5% " >
+
+               <!-- Background color -->
+              <div class="card-up indigo lighten-1"></div>
+
+              <!-- Avatar -->
+              <div class="avatar mx-auto white">
+                <img src="C:\Users\salok\PycharmProjects\New File\Book Share\authentication\frontend\img\SM logo.jpg" alt="SM" class="rounded-circle" width="60" height="60" margin="0">
+              </div>
+
+              <!-- Content -->
+              <div class="card-body">
+                <!-- Name -->
+                <h4 class="card-title">Salokhiddin Mukhiddinov</h4>
+                <hr>
+                <!-- Quotation -->
+                <h6>Co-Creator</h6>
+                  <h6> Fourth Year | Undergrad</h6>
+                  <h6>Bachelor of Science in Computer Science</h6>
+                  <h6>Webster University</h6>
+              </div>
+   
+        </div>
+         <!-- Card Narrower -->
+
+
+
+         <!-- Card Narrower -->
+
+
+        <!-- Card Narrower -->
+         <!-- Card Narrower -->
+
+
+
+    </div>
+
+</div>
+<!-- Footer -->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: live is what you made of</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <div class="w3-xlarge w3-padding-32">
+        <a href="https://www.facebook.com"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://www.snapchat.com"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+        <a href="https://www.pinterest.com"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+        <a href="https://www.twitter.com"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+</footer>
+
+ <p>Powered by <a href="https://github.com/SalokhiddinMukhiddinov" target="_blank">Salokhiddin Mukhiddinov</a></p>
+</footer>
+  <!-- Footer -->
+</body>
+</html>
